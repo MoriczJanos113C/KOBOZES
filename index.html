@@ -9,7 +9,13 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container-fluid" id="egesz">
+    <div class="container-fluid">
+        <ul>
+            <li><a class="active" href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+          </ul>
         <h2>Famennyiség kalkulátor</h2>
             <form id="form">
                 <label for="fa">Farönk térfogat számító</label>
@@ -20,17 +26,19 @@
                     <option value="Scribner">Scribner</option>
                     <option value="Newton">Newton</option>
                 </select>
+            </form>
+                <p id="kimenet">Térfogat (Kéregmentes): --- m3</p>
                 <p>Középső átmérő</p>
-                <input type="number" id="atmero">
+                <input type="number" id="atmero" placeholder="cm">
                 <br>
                 <p>Hosszúság</p>
-                <input type="number" id="hosszusag">
+                <input type="number" id="hosszusag" placeholder="m">
                 <p>Mennyiség(db)</p>
-                <input type="number" id="mennyiseg">
+                <input type="number" id="mennyiseg" placeholder="1">
                 <br><br>
 
                 <button id="szamol">Számol</button>
-                <br>
+                <br><br>
                 <p>A végső érték megközelítő, a változó tényezőknek köszönhetően eltérhet az aktuális értéktől.</p>
     </div>
 </body>
