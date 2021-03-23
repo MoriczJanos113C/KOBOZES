@@ -50,9 +50,9 @@
                     const mennyiseg=document.getElementById("mennyiseg");
 
                     function szamolHuber(){
-                        let elso= ((Math.pow((((atmero.value/100)+hosszusag.value)*1.5),2))*Math.PI)/4 ;
-                        let masodik=((Math.pow(atmero.value/100,2))*Math.PI)/4; 
-                        let osszeg=Math.round(((elso+masodik)/2)*hosszusag.value);
+                        let egy= ((Math.pow((((atmero.value/100)+hosszusag.value)*1.5),2))*Math.PI)/4 ;
+                        let ketto=((Math.pow(atmero.value/100,2))*Math.PI)/4; 
+                        let osszeg=Math.round(((egy+ketto)/2)*hosszusag.value);
                         kimenet.innerHTML=osszeg;
                         };
 
