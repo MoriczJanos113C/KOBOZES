@@ -27,7 +27,7 @@
                     <option value="Newton">Newton</option>
                 </select>
             </form>
-                <p id="kimenet">Térfogat (Kéregmentes): --- m3</p>
+                <p id="kimenet">Térfogat (Kéregmentes): --- m³</p>
                 <p>Középső átmérő</p>
                 <input type="number" id="atmero" placeholder="cm">
                 <br>
@@ -40,6 +40,17 @@
                 <button id="szamol">Számol</button>
                 <br><br>
                 <p>A végső érték megközelítő, a változó tényezőknek köszönhetően eltérhet az aktuális értéktől.</p>
+
+                <script>
+                    const Huber = document.getElementById("szamolHuber");
+
+                    function szamolHuber(){
+                        kimenet.innerHTML = "";
+                        kimenet.innerHTML = parseInt(atmero.value)*1.5+parseInt(hosszusag.value)*1.5*parseInt(mennyiseg.value)+" m³";
+                    }
+                    
+                    szamol.addEventListener("click", szamolHuber);
+                </script>
     </div>
 </body>
 </html>
